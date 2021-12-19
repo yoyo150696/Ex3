@@ -4,7 +4,7 @@ OBJECTS_MAIN=main.o
 OBJECTS_LIB=ex3.o
 FLAGS= -Wall -g
 
-all: libex3.a stringProg	
+all: stringProg	
 stringProg: $(OBJECTS_MAIN) libex3.a 
 	$(CC) $(FLAGS) -o stringProg $(OBJECTS_MAIN) libex3.a
 libex3.a: $(OBJECTS_LIB)
