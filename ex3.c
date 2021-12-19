@@ -107,24 +107,25 @@ void att(char *t,char *word){
     for(int j = 0;t[j];j++){
         int i = 0;
         int k = 0;
-        char temp_w[1024];
+        char temp_w[30];
         char temp_ws[1024];
-        memset(temp_w, 0, strlen(temp_w));
-        memset(temp_ws, 0, strlen(temp_ws));
-        while((t[j+i] >= 'a' && t[j+i] <= 'z') || (t[j+i] >= 'A' && t[j+i] <= 'Z')||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.')&&i>0)){
+        memset(temp_w, 0, 30);
+        memset(temp_ws, 0, 1024);
+        while((t[j+i] >= 'a' && t[j+i] <= 'z') || (t[j+i] >= 'A' && t[j+i] <= 'Z')||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.'||t[i+j] == '-')&&i>0)){
             if((t[j+i] == w[k])||t[j+i] == wr[k]){
                 temp_w[k] = t[j+i];
                 temp_ws[i] = t[j+i];
                 i++;
                 k++;
             }
-            else if(t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.'){
+            else if(t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.'||t[i+j] == '-'){
                 temp_ws[i] = t[j+i];
                 i++;
             }
             else{
                 break;
             }
+            //printf("%s,%s\n",temp_w,temp_ws);
             if(strcmp(temp_w,wr)== 0||strcmp(temp_w,w) == 0){
                 if(pass == 1) printf("~");
                 printf("%s",temp_ws);
