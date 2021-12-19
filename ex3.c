@@ -76,7 +76,7 @@ char atbash(char c){
 int c_to_n(char c)
 {
     int n = 0;
-    if (c == ' '||c == ','||c == '\n'||c == '.'){
+    if (c == ' '||c == ','||c == '\n'||c == '.'||c == '-'){
         return n;
     }
     char *p = strchr(alphabet, toupper(c));
@@ -171,7 +171,7 @@ void gemt(char *t,char *word){
         int i = 0;
         char w[100];
         int sum = 0;
-        while((t[j+i] >= 'a' && t[j+i] <= 'z') || (t[j+i] >= 'A' && t[j+i] <= 'Z')||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.')&&i>0)){
+        while((t[j+i] >= 'a' && t[j+i] <= 'z') || (t[j+i] >= 'A' && t[j+i] <= 'Z')||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.'||t[i+j] == '-')&&i>0)){
             sum += c_to_n(t[i+j]);
             w[i] = t[j+i];
             w[i+1] = '\0';
