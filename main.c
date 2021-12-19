@@ -16,5 +16,8 @@ int main(){
     att(txt,word);
     printf("\nAnagram Sequences: ");
     angram(txt,word);
+    memset(word, 0, 30);
+    memset(txt, 0, 1024);
+
     return 0;
 }
