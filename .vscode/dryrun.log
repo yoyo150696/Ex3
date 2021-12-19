@@ -1,8 +1,5 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/mnt/c/Users/yohai/OneDrive/שולחן העבודה/Ex3'
-gcc -Wall -g -c ex3.c
-ar -rcs libex3.a ex3.o	
-gcc -Wall -g -c main.c 
-gcc -Wall -g -o stringProg main.o libex3.a
+make: Nothing to be done for 'all'.
 make: Leaving directory '/mnt/c/Users/yohai/OneDrive/שולחן העבודה/Ex3'
  

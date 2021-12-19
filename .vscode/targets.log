@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sun Dec 19 16:33:51 2021
+# Make data base, printed on Sun Dec 19 17:53:34 2021
 
 # Variables
 
@@ -159,7 +160,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=4/106=4%
+# Load=74/1024=7%, Rehash=0, Collisions=4/100=4%
 
 # Pattern-specific Variable Values
 
@@ -167,9 +168,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 46, inode 136233888727961661): 11 files, no impossibilities.
+# . (device 46, inode 136233888727961661): 16 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -177,15 +178,13 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Files
 
-all: libex3.a progmains
+all: stringProg
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  Successfully updated.
 
 .PHONY: clean all
 #  Implicit rule search has not been done.
@@ -194,49 +193,33 @@ all: libex3.a progmains
 
 # Not a target:
 main.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-12-19 16:36:15.0043226
+#  File has been updated.
+#  Successfully updated.
 
 ex3.o: ex3.c ex3.h
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
+#  Last modified 2021-12-19 17:53:09.0375729
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := ex3.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := ex3.c ex3.h
-# automatic
-# | := 
-# automatic
-# < := ex3.c
-# automatic
-# ^ := ex3.c ex3.h
-# automatic
-# ? := ex3.c ex3.h
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
-#  recipe to execute (from 'makefile', line 13):
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 12):
 	$(CC) $(FLAGS) -c ex3.c
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-17 12:16:43.0568505
+#  Last modified 2021-12-19 17:53:16.6651986
 #  File has been updated.
 #  Successfully updated.
+
+stringProg: main.o ex3.o
+#  Implicit rule search has not been done.
+#  Last modified 2021-12-19 17:53:19.5502623
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 10):
+	$(CC) $(FLAGS) -o stringProg $(OBJECTS_MAIN) ex3.o	
 
 # Not a target:
 .DEFAULT:
@@ -247,7 +230,7 @@ makefile:
 # Not a target:
 ex3.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-19 16:16:19.7438179
+#  Last modified 2021-12-19 17:21:28.5319012
 #  File has been updated.
 #  Successfully updated.
 
@@ -256,7 +239,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 20):
+#  recipe to execute (from 'makefile', line 19):
 	rm -f *.o *.a progmains stringProg
 
 # Not a target:
@@ -268,43 +251,26 @@ ex3.h:
 
 main.o: main.c ex3.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 15):
+#  Last modified 2021-12-19 17:53:08.9855728
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 14):
 	$(CC) $(FLAGS) -c main.c 
 
-libex3.a: ex3.o
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
- 
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
-#  recipe to execute (from 'makefile', line 11):
-	$(AR) -rcs libex3.a $(OBJECTS_LIB)	
-
-progmains: main.o libex3.a
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 9):
-	$(CC) $(FLAGS) -o stringProg $(OBJECTS_MAIN) libex3.a
-
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/41=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/36=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 182 B / avg = 8 B
-# current buf: size = 8162 B / used = 182 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 185 B / avg = 8 B
+# current buf: size = 8162 B / used = 185 B / count = 23 / avg = 8 B
 
-# strcache performance: lookups = 46 / hit rate = 52%
+# strcache performance: lookups = 46 / hit rate = 50%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/46=2%
-# Finished Make data base on Sun Dec 19 16:33:51 2021
+# Load=23/8192=0%, Rehash=0, Collisions=1/46=2%
+# Finished Make data base on Sun Dec 19 17:53:34 2021
 
  
