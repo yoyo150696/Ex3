@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Dec 18 22:56:59 2021
+# Make data base, printed on Sun Dec 19 16:33:51 2021
 
 # Variables
 
@@ -15,7 +15,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -35,7 +35,7 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /home/yoyo1516/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/node
+_ = /home/yoyo1516/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/node
 # makefile (from 'makefile', line 1)
 MAKEFILE_LIST :=  makefile
 # 'override' directive
@@ -53,13 +53,15 @@ VSCODE_CWD = /mnt/c/Users/yohai/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/yoyo1516/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.1/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.2.1/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Calibre2/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/yohai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yohai/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yohai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yohai/AppData/Roaming/npm:/snap/bin
+PATH = /home/yoyo1516/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.1/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.1/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2020.2.1/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Calibre2/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/yohai/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/yohai/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/yohai/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yohai/AppData/Roaming/npm:/snap/bin
 # makefile (from 'makefile', line 2)
 AR = ar
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-9873c8ad-2625-4cfc-8bbd-20f158129ddb.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-3cce4fd6-a5f1-4afa-bb52-f6d559f28916.sock
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/yohai/AppData/Local/Temp/vscode-remote-wsl/899d46d82c4c95423fb7e10e68eba52050e30ba3/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -73,7 +75,7 @@ PWD = /mnt/c/Users/yohai/OneDrive/שולחן העבודה/Ex3
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/11_interop
+WSL_INTEROP = /run/WSL/4351_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/server/remoteExtensionHostProcess
 # environment
@@ -145,7 +147,7 @@ FLAGS = -Wall -g
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/yoyo1516/.vscode-server/bin/7db1a2b88f7557e0a43fec75b6ba7e50b3e9f77e/remote/node_modules
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/yoyo1516/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/remote/node_modules
 # default
 .RECIPEPREFIX := 
 # environment
@@ -156,10 +158,8 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
-# environment
-MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=4/107=4%
+# Load=74/1024=7%, Rehash=0, Collisions=4/106=4%
 
 # Pattern-specific Variable Values
 
@@ -167,9 +167,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 46, inode 136233888727961661): 17 files, no impossibilities.
+# . (device 46, inode 136233888727961661): 11 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -185,7 +185,7 @@ all: libex3.a progmains
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 
 .PHONY: clean all
 #  Implicit rule search has not been done.
@@ -194,10 +194,9 @@ all: libex3.a progmains
 
 # Not a target:
 main.c:
-#  Implicit rule search has been done.
-#  Last modified 2021-12-17 12:47:38.2722504
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .SUFFIXES:
@@ -207,9 +206,28 @@ main.c:
 
 ex3.o: ex3.c ex3.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-12-17 12:45:18.4720925
+#  Implicit/static pattern stem: ''
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ex3.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := ex3.c ex3.h
+# automatic
+# | := 
+# automatic
+# < := ex3.c
+# automatic
+# ^ := ex3.c ex3.h
+# automatic
+# ? := ex3.c ex3.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
 #  recipe to execute (from 'makefile', line 13):
 	$(CC) $(FLAGS) -c ex3.c
 
@@ -229,7 +247,7 @@ makefile:
 # Not a target:
 ex3.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-17 12:45:13.0079361
+#  Last modified 2021-12-19 16:16:19.7438179
 #  File has been updated.
 #  Successfully updated.
 
@@ -244,51 +262,32 @@ clean:
 # Not a target:
 ex3.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-12-17 11:47:04.507465
+#  Last modified 2021-12-19 16:23:45.3198228
 #  File has been updated.
 #  Successfully updated.
 
 main.o: main.c ex3.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-12-17 13:14:12.6643085
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'makefile', line 15):
 	$(CC) $(FLAGS) -c main.c 
 
 libex3.a: ex3.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-12-17 12:45:18.5232669
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 #  recipe to execute (from 'makefile', line 11):
 	$(AR) -rcs libex3.a $(OBJECTS_LIB)	
 
 progmains: main.o libex3.a
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := progmains
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
- 
-# + := main.o libex3.a
-# automatic
-# | := 
-# automatic
-# < := main.o
-# automatic
-# ^ := main.o libex3.a
-# automatic
-# ? := main.o libex3.a
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'makefile', line 9):
 	$(CC) $(FLAGS) -o stringProg $(OBJECTS_MAIN) libex3.a
 
@@ -300,12 +299,12 @@ progmains: main.o libex3.a
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 192 B / avg = 7 B
-# current buf: size = 8162 B / used = 192 B / count = 25 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 182 B / avg = 8 B
+# current buf: size = 8162 B / used = 182 B / count = 22 / avg = 8 B
 
-# strcache performance: lookups = 52 / hit rate = 51%
+# strcache performance: lookups = 46 / hit rate = 52%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=1/52=2%
-# Finished Make data base on Sat Dec 18 22:56:59 2021
+# Load=22/8192=0%, Rehash=0, Collisions=1/46=2%
+# Finished Make data base on Sun Dec 19 16:33:51 2021
 
  
