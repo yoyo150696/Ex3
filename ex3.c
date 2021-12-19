@@ -144,13 +144,13 @@ void angram(char *t,char *word){
         char temp[1024];
          memset(temp, 0, strlen(temp));
         strcpy(temp_w,word);
-        while(len>(j+i)&&(check(temp_w,t[j+i]) == 1||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.')&&i>0))){
+        while(len>(j+i)&&(check(temp_w,t[j+i]) == 1||((t[j+i] == ' ')&&i>0))){
             if(check(temp_w,t[j+i]) == 1){
                 temp[i] = t[j+i];
                 removeChar(temp_w,t[j+i]);
                 i++;
             }
-            if((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.')&&strlen(temp_w) != 0){
+            if((t[j+i] == ' ')&&strlen(temp_w) != 0){
                 temp[i] = t[j+i];
                 i++;
             }
