@@ -4,8 +4,8 @@ OBJECTS_MAIN=main.o
 OBJECTS_LIB=ex3.o
 FLAGS= -Wall -g
 
-all: libex3.a progmains	
-progmains: $(OBJECTS_MAIN) libex3.a 
+all: libex3.a stringProg	
+stringProg: $(OBJECTS_MAIN) libex3.a 
 	$(CC) $(FLAGS) -o stringProg $(OBJECTS_MAIN) libex3.a
 libex3.a: $(OBJECTS_LIB)
 	$(AR) -rcs libex3.a $(OBJECTS_LIB)	
@@ -18,4 +18,4 @@ main.o: main.c ex3.h
 .PHONY: clean all
 
 clean:
-	rm -f *.o *.a progmains stringProg
+	rm -f *.o *.a stringProg stringProg
