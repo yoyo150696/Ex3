@@ -5,14 +5,10 @@
 
 int main(){
 
-    FILE *pf;
     char word[30];
     char txt[1024];
-    
-    pf = fopen("input/input4.txt","r");
 
-    fscanf(pf,"%s %[^~]",word,txt);
-    
+    scanf("%s %[^~]",word,txt);
 
     printf("Gematria Sequences: ");
     gemt(txt,word);
