@@ -8,6 +8,8 @@ int main(){
     char word[30];
     char txt[1024];
 
+    
+
     scanf("%s %[^~]",word,txt);
 
     printf("Gematria Sequences: ");
@@ -18,6 +20,5 @@ int main(){
     angram(txt,word);
     memset(word, 0, 30);
     memset(txt, 0, 1024);
-
     return 0;
 }

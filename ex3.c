@@ -97,18 +97,18 @@ int gem(char *t){
 
 void att(char *t,char *word){
     int pass = 0;
-    char w[1024];
+    char w[strlen(word)];
     for(int i = 0;word[i];i++){
         w[i] = atbash(word[i]);
     }
-    char wr[1024];
+    char wr[strlen(word)];
     strcpy(wr,w);
     strrev(w);
     for(int j = 0;t[j];j++){
         int i = 0;
         int k = 0;
-        char temp_w[30];
-        char temp_ws[1024];
+        char temp_w[strlen(word)];
+        char temp_ws[strlen(t)];
         memset(temp_w, 0, 30);
         memset(temp_ws, 0, 1024);
         while((t[j+i] >= 'a' && t[j+i] <= 'z') || (t[j+i] >= 'A' && t[j+i] <= 'Z')||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.'||t[i+j] == '-')&&i>0)){
@@ -141,8 +141,8 @@ void angram(char *t,char *word){
     int pass = 0;
     for(int j = 0;j<len;j++){
         int i = 0;
-        char temp_w[1024];
-        char temp[1024];
+        char temp_w[strlen(word)];
+        char temp[strlen(t)];
          memset(temp, 0, strlen(temp));
         strcpy(temp_w,word);
         while(len>(j+i)&&(check(temp_w,t[j+i]) == 1||((t[j+i] == ' ')&&i>0))){
@@ -170,7 +170,7 @@ void gemt(char *t,char *word){
     int n = gem(word);
     for(int j = 0;t[j];j++){
         int i = 0;
-        char w[100];
+        char w[strlen(t)];
         int sum = 0;
         while((t[j+i] >= 'a' && t[j+i] <= 'z') || (t[j+i] >= 'A' && t[j+i] <= 'Z')||((t[j+i] == ' '||t[j+i]==','||t[j+i]=='\n'||t[j+i] == '.'||t[i+j] == '-')&&i>0)){
             sum += c_to_n(t[i+j]);
